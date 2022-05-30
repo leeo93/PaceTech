@@ -7,51 +7,51 @@ OpcaoMenu, Opcaotemperatura, OpcaoCotacao, Sair: inteiro
 
 inicio
 enquanto Opcaomenu <> 3 faca
-escreval("Escolher a opção para conversão")
+escreval("Escolher a opÃ§Ã£o para conversÃ£o")
 escreval(" 1- Para Conversor Temperatura")
 escreval(" 2- Para Converter Moeda")
 escreval(" 3- Para Sair")
 leia(OpcaoMenu)
 limpatela
   se OpcaoMenu = 1 entao
-  escreval("Escola Conversão")
+  escreval("Escola ConversÃ£o")
   escreval(" 1- Celsius para Fahrenheit ")
   escreval(" 2- Fahrenheit para Celsius")
   leia(OpcaoTemperatura)
 limpatela
    se OpcaoTemperatura = 1 entao
-   escreval("Digite a Temperatura Cº")
+   escreval("Digite a Temperatura CÂº")
    leia (TCelsius)
-   TFahrenheit <- (TCelsius * 1,8) + 32 )
-   escreval("A temperatura em Fahrenheit é:",TFahrenheit:1:1, "º")
+   TFahrenheit <- (TCelsius * 1.8) + 32
+   escreval("A temperatura em Fahrenheit Ã©:",TFahrenheit:1:1, "Âº")
   senao
     se OpcaoTemperatura = 2 entao
-    escreval("Digite a Temperatura Fº")
+    escreval("Digite a Temperatura FÂº")
     leia (TFahrenheit)
-    TCelsius <-(TFahrenheit-32)/1,8
-    escreval("A temperatura em Celsius é:",TCelsius:1:1, "º")
+    TCelsius <-(TFahrenheit-32)/1.8
+    escreval("A temperatura em Celsius Ã©:",TCelsius:1:1, "Âº")
     fimse
    fimse
 senao
    se OpcaoMenu = 2 entao
-   escreval("Escola a Conversão")
-   escreval(" 1-Real para Dólar")
-   escreval(" 2-Dólar para Real")
+   escreval("Escola a ConversÃ£o")
+   escreval(" 1-Real para DÃ³lar")
+   escreval(" 2-DÃ³lar para Real")
    leia (OpcaoCotacao)
 limpatela
-    escreval("Escreva cotação do Dólar hoje ")
+    escreval("Escreva cotaÃ§Ã£o do DÃ³lar hoje ")
     leia (Cotacao)
      se OpcaoCotacao = 1 entao
-     escreval("Quantos Reais você tem?")
+     escreval("Quantos Reais vocÃª tem?")
      leia (Reais)
      Dolar <- Reais / Cotacao
-    escreval("Você tem ","U$", Dolar:1:2)
+    escreval("VocÃª tem ","U$", Dolar:1:2)
    senao
      se OpcaoCotacao = 2 entao
-     escreval("Quantos Dólar você tem ?")
+     escreval("Quantos DÃ³lar vocÃª tem ?")
      leia (Dolar)
      Reais <- Dolar * Cotacao
-     escreval("Você tem ","R$", Reais:1:2)
+     escreval("VocÃª tem ","R$", Reais:1:2)
    fimse
    fimse
    fimse
